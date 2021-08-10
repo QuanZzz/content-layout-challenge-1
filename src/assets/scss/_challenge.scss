@@ -1,0 +1,104 @@
+//max-width: 992px
+@media only screen and (max-width: $breakpoint-lg) {
+    .content-element-list {
+      display: flex;
+    }
+    .content-element {
+      display: initial;
+    }
+  }
+  //max-width: 768px
+  @media only screen and (max-width: $breakpoint-md) {
+    .content-element-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .content-element {
+      flex-basis: calc(50% - 20px * 2) !important;
+    }
+    .content-element__content-btn {
+      margin-left: 0;
+    }
+  }
+  //max-width: 576px
+  @media only screen and (max-width: $breakpoint-sm) {
+    .content-element-list {
+      display: initial;
+    }
+    .content-element {
+      display: flex;
+      flex-basis: initial !important;
+    }
+    .content-element__content-heading {
+      text-align: left;
+    }
+    .content-element__content-copy {
+      text-align: left;
+    }
+    .content-element__content-btn {
+      margin-left: 0;
+      float: left;
+    }
+  }
+  //max-width: 360px
+  @media only screen and (max-width: $breakpoint-xs) {
+    .content-element-list {
+      display: grid;
+    }
+    .content-element {
+      display: initial;
+    }
+    .content-element__content-btn {
+      margin-bottom: 20px;
+      margin-left: 20%;
+    }
+  }
+  
+  .content-element-list {
+    display: flex;
+    padding: 40px;
+  }
+  
+  .content-element {
+    border: solid 1px gray;
+    border-radius: 3px;
+    margin: 20px;
+    flex-basis: 33%;
+  }
+  
+  .content-element__author {
+    padding: 40px;
+    background-color: lightgray;
+  }
+  
+  .content-element__author-img {
+    width: 60%;
+  }
+  
+  .content-element__author-name {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  .content-element__content {
+    padding: 20px;
+  }
+  
+  .content-element__content-img {
+    width: 100%;
+  }
+  
+  .content-element__content-heading {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .content-element__content-copy {
+    text-align: center;
+  }
+  
+  .content-element__content-btn {
+    margin-top: 20px;
+  }
